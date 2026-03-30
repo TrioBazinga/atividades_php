@@ -11,3 +11,10 @@ Exercício 2 - Pergunta de aplicação
 Para manter o usuário logado, o sistema deve usar um token seguro para "lembrar" do usuário e assim fazer com que ele continue logado mesmo depois de sair do navegador, no entanto, dados como senhas e endereços devem ser armazenados com as sessions, assim haverá uma maior segurança para ambos os lados.
 Para armazenar itens temporários no carrinho, o sistema deve usar principalmente cookies para evitar a frustração do usuário de perder sua lista de desejos/carrinho, mas as sessions podem ser implementadas para fazer um algoritmo ao cliente, verificando quais são seus produtos favoritos e os guardando no servidor para esse propósito.
 Sobre as preferências do usuário, os cookies podem ser usados para que o cliente adicione os produtos que mais gosta aos favoritos, para que assim, ele mesmo os consulte depois, enquanto as sessions, como uma "lista escondida", formada conforme o cliente for clicando em produtos específicos ou os for adicionando no carrinho.
+
+Exercício 3 - Pergunta de investigação 
+
+Quando executar o arquivo pela primeira vez, a mensagem exibida será “Cookie ainda não disponível”, porque o cookie foi apenas enviado ao navegador, mas ainda não retornou ao servidor.
+Após a página é atualizada, o cookie foi armazenado no navegador e enviado na nova requisição, então aparece “Valor do cookie: 1”.
+Quando abrirmos as ferramentas do navegador, é possível ver o cookie chamado contador armazenado, depois de limpar os cookies e atualizar novamente, a mensagem volta a ser “Cookie ainda não disponível”, fazendo isso se reinicia o processo.
+Isso acontece porque o cookie só fica disponível no $_COOKIE depois de uma nova requisição, já que ele é salvo no navegador antes de ser enviado de novo ao servidor.
