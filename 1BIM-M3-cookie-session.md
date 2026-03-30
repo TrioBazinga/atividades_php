@@ -18,3 +18,7 @@ Quando executar o arquivo pela primeira vez, a mensagem exibida será “Cookie 
 Após a página é atualizada, o cookie foi armazenado no navegador e enviado na nova requisição, então aparece “Valor do cookie: 1”.
 Quando abrirmos as ferramentas do navegador, é possível ver o cookie chamado contador armazenado, depois de limpar os cookies e atualizar novamente, a mensagem volta a ser “Cookie ainda não disponível”, fazendo isso se reinicia o processo.
 Isso acontece porque o cookie só fica disponível no $_COOKIE depois de uma nova requisição, já que ele é salvo no navegador antes de ser enviado de novo ao servidor.
+
+Exercicio 4
+
+As sessions são preferidas na autenticação porque aumentam a segurança, já que os dados sensíveis ficam armazenados no servidor e o cliente recebe apenas um identificador (session ID). Na manipulação de dados, elas facilitam o controle, pois o servidor gerencia as informações do usuário de forma centralizada e mais confiável. Já utilizar apenas cookies pode ser arriscado, pois eles ficam no navegador e podem ser roubados ou manipulados. Por isso, sessions são mais seguras e recomendadas para autenticação em sistemas web.
